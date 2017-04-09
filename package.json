@@ -18,10 +18,13 @@
   },
   "homepage": "https://github.com/JakubMatyka/coderspro-weather-app-copy#readme",
   "devDependencies": {
-    "express": "^4.15.2",
-    "nodemon": "^1.11.0"
+    "express": "4.15.2",
+    "nodemon": "1.11.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "angular": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-route": "1.5.11",
+    "bootstrap": "3.3.7"
   }
 }

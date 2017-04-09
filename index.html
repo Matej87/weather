@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" ng-app="weatherApp">
 <head>
     <title>AngularJS Weather Ap</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -12,15 +12,15 @@
     </style>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="app.js"></script>
+
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" >
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">AngularJS Weather</a>
+                <a href="/" class="navbar-brand">AngularJS Weather</a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
@@ -30,10 +30,16 @@
     </nav>
 </header>
 
-<div class="container"></div>
+<div class="container">
+    <ng-view></ng-view>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/angular-resource/angular-resource.js"></script>
+<script src="app.js"></script>
 </body>
 </html> 
  
